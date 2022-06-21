@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tues Feb 22 12:02:52 2022
-
-@author: A1710112
 
 The following code works through several examples of forecasting an underlying
 price series. For the example we use a back testing routine, were we use the
