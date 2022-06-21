@@ -2,28 +2,7 @@
 """
 
 The following code works through several examples of forecasting an underlying
-price series. For the example we use a back testing routine, were we use the
-last 90 days to test our forecasts, and the previous 2-years of daily data to
-form a training set.
-
-The goal is to generate a set of forecasted returns and prices for XOM. We 
-will assume that XOM is driven by an idiosynratic component as well as the 
-movements in Crude prices as well as the S&P 500 (a stand in for the market).
-
-To start we need a model of the return generating process. We can start by
-assuming that XOM has a linear factor structure with the S&P 500 and Crude.
-Therefore, we can estimate a risk exposure of XOM to the S&P 500 and Crude, 
-generate a forecast of S&P 500 and Crude returns, and then use these to 
-generate a forecast of XOM returns. 
-
-There are several methods to forecast S&P 500 and Crude returns. We first
-need a model of their expected returns. This could come from using past returns
-or using market expectations (e.g., from futures). We then need an estimate of
-volatility. This could come from past return volatility (e.g., constant, GARCH,
-etc.), or again from market expectations (e.g., implied volatility). Once we
-have these we can generate forecasted returns for S&P and Crude, and then use
-these plus an idiosynratic term (i.e., using the volatility of XOM), to forecast
-XOM.
+price series. 
 """
 
 import pandas as pd
